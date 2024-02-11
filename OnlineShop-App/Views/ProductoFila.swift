@@ -6,14 +6,17 @@
 //
 
 import SwiftUI
-
+//https://fakestoreapi.com/products
 struct ProductoFila: View {
-    //var producto: Producto
+    var producto: Producto
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            AsyncImage(url: URL(string: producto.imagen))
+            Text(producto.description)
+        }
     }
 }
 
 #Preview {
-    ProductoFila()
+    ProductoFila(producto: )
 }
