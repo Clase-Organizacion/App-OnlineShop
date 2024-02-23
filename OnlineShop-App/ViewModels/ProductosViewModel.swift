@@ -15,16 +15,16 @@ class ProductosViewModel: ObservableObject {
     
     init() {
        
-        productList(url: "https://fakestoreapi.com/products");
+        getProduct()
         
     }
     
     
-    func getWeather(url:String){
+    func getProduct(){
             Task{ //hace que sea asíncrona la tarea, consiguiendo concurrencia
                 do{
-                    let producto = try await NetworkManager.shared.getProducto(url: url)
-                    self.productList.append(producto)
+                    let producto = try await NetworkManager.shared.getProduct()
+                    self.productList = producto
                 }catch{
                     
                     if let callError = error as? WEError {
