@@ -15,7 +15,7 @@ struct ProductoFila: View {
                 imagen in
                 if let image = imagen.image{
                     image.resizable()
-                        .frame(width: 100, height: 100)
+                        .frame(width: 50, height: 50)
                 }
             }
             VStack {

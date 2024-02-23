@@ -18,25 +18,26 @@ struct TabViewMenu: View {
                 .offset(x: -90)
                 Text("Products")
             }
-            TabView {
-                Text("HomeView()")
-                    .tabItem {
-                        Label("Home", systemImage: "house.fill")
-                    }
-                Text("AccountView()")
-                    .badge("!")
-                    .tabItem {
-                        Label("Account", systemImage: "person.crop.circle.fill")
-                    }
-                Text("OrderView()")
-                    .badge(2)
-                    .tabItem {
-                        Label("Order", systemImage: "cart.fill")
-                    }
-            }
+                TabView {
+                    ListaProductosView(productos: .constant(Mockdata.productos)).tabItem {
+                            Label("Home", systemImage: "house.fill")
+                        }
+                    Text("AccountView()")
+                        .badge("!")
+                        .tabItem {
+                            Label("Account", systemImage: "person.crop.circle.fill")
+                        }
+                    Text("OrderView()")
+                        .badge(2)
+                        .tabItem {
+                            Label("Order", systemImage: "cart.fill")
+                        }
+                }
         }
     }
 }
+
+
 
 #Preview {
     TabViewMenu()
