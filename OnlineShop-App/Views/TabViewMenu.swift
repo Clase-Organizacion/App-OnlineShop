@@ -9,6 +9,7 @@ import SwiftUI
 //https://fakestoreapi.com/docs
 //https://github.com/keikaavousi/fake-store-api
 struct TabViewMenu: View {
+    @ObservedObject var list = ProductList()
     var body: some View {
         VStack {
             HStack {
@@ -18,6 +19,8 @@ struct TabViewMenu: View {
                 .offset(x: -90)
                 Text("Products")
             }
+            
+            
             TabView {
                 Text("HomeView()")
                     .tabItem {

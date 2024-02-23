@@ -33,3 +33,7 @@ struct Mockdata{
     
     static let productos = [sampleProduct,sampleProduct2,sampleProduct3]
 }
+
+
+
+

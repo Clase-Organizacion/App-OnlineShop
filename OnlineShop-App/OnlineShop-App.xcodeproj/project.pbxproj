@@ -20,6 +20,7 @@
 		6F08DF312B71BE5400A838E8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F08DF302B71BE5400A838E8 /* NetworkManager.swift */; };
 		6F08DF332B71BE7200A838E8 /* WEError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F08DF322B71BE7200A838E8 /* WEError.swift */; };
 		6F08DF352B71C4D500A838E8 /* DatosPrueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F08DF342B71C4D500A838E8 /* DatosPrueba.swift */; };
+		6F0F0F812B89363B00C02AB0 /* ProductosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0F0F802B89363B00C02AB0 /* ProductosViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		6F08DF302B71BE5400A838E8 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		6F08DF322B71BE7200A838E8 /* WEError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WEError.swift; sourceTree = "<group>"; };
 		6F08DF342B71C4D500A838E8 /* DatosPrueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatosPrueba.swift; sourceTree = "<group>"; };
+		6F0F0F802B89363B00C02AB0 /* ProductosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductosViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 		6F08DF252B717E7A00A838E8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				6F0F0F802B89363B00C02AB0 /* ProductosViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				6F08DF2B2B71825800A838E8 /* ProductoFila.swift in Sources */,
 				6F08DEFB2B717D9900A838E8 /* OnlineShop_App.swift in Sources */,
 				6F08DF352B71C4D500A838E8 /* DatosPrueba.swift in Sources */,
+				6F0F0F812B89363B00C02AB0 /* ProductosViewModel.swift in Sources */,
 				6F08DF292B717F9800A838E8 /* Producto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
