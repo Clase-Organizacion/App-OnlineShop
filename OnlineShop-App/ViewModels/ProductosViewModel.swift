@@ -14,10 +14,9 @@ class ProductosViewModel: ObservableObject {
     @Published var productList: [Producto] = []
     
     init() {
-       
-        getProduct()
-        
-    }
+            // Llamada al inicializador designado con una URL predeterminada
+            getProduct()
+        }
     
     
     func getProduct(){

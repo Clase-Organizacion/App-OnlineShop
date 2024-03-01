@@ -1,23 +1,25 @@
+//
+//  ListaProductosView.swift
+//  OnlineShop-App
+//
+//  Created by  on 23/2/24.
+//
+
 import SwiftUI
 
-struct ProductListView: View {
-    @ObservedObject var list: ProductosViewModel
-
+struct ListaProductosView: View {
+    @ObservedObject var list = ProductosViewModel()
+   
     var body: some View {
-        NavigationView {
-            List(list.products) { product in
-                NavigationLink(destination: //ProductDetailView(producto: product))
-                               {
-                    ProductoFila(product: product)
-                }
-            }
-            .navigationTitle("Productos")
+        List(list.productList) { producto in
+            ProductoFila(producto: producto)
         }
     }
 }
 
-struct ProductListView: PreviewProvider {
+
+struct ListaProductosView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductListView(list: ProductosViewModel())
+        ListaProductosView()
     }
 }

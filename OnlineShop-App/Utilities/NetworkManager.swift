@@ -17,6 +17,7 @@ class NetworkManager {
             let decoder = JSONDecoder()
             return try decoder.decode([Producto].self, from: data)
         } catch {
+            print(error)
             throw WEError.invalidData
         }
     }

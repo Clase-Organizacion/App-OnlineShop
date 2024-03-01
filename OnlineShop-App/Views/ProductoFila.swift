@@ -11,7 +11,7 @@ struct ProductoFila: View {
     var producto: Producto
     var body: some View {
         HStack {
-            AsyncImage(url: URL(string: producto.imagen)){
+            AsyncImage(url: URL(string: producto.image)){
                 imagen in
                 if let image = imagen.image{
                     image.resizable()
